@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.irena.robertkaczmarek.pomocnikpracodawcy.saveData">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/imie"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:layout_column="0"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"
+            />
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"/>
+    </TableRow>
+
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/nazwisko"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:layout_column="0"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"
+
+            />
+        <EditText
+            android:id="@+id/surname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/kindOfLern"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+
+            >
+
+            <RadioButton
+                android:id="@+id/firstLern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="szkolenie wstępne"
+                android:checked="true"
+
+                />
+
+            <RadioButton
+                android:id="@+id/periodLern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="szkolenie okresowe"
+
+                />
+        </RadioGroup>
+
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:background="@android:color/holo_blue_bright"
+            android:gravity="right"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:text="@string/stanowisko" />
+
+        <Spinner
+            android:id="@+id/stanowisko"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:entries="@array/post1"
+            android:background="@android:color/holo_blue_bright"
+            >
+        </Spinner>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/dataszkolenia"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/data_szkolenia"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:layout_column="0"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"
+
+            />
+        <EditText
+            android:id="@+id/dataLearning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:inputType="date"
+            android:hint="@string/data"
+            android:background="@android:color/holo_blue_bright"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/następne_badanie"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:layout_column="0"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"
+
+            />
+        <EditText
+            android:id="@+id/dataDoctor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:hint="@string/data"
+            android:background="@android:color/holo_blue_bright"/>
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/umowa_do"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:layout_margin="5dp"
+            android:layout_column="0"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"
+
+            />
+        <EditText
+            android:id="@+id/dataEndOfContract"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:hint="@string/data"
+            android:background="@android:color/holo_blue_bright"/>
+    </TableRow>
+
+
+
+    <TableRow>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:layout_column="0"
+            android:textSize="17sp"
+           />
+
+        <EditText
+            android:id="@+id/dataNextLearn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_column="1"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:background="@android:color/holo_blue_bright"/>
+
+    </TableRow>
+    <RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="35dp"
+            android:text="@string/zapisz"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/save"
+
+            />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/wyczysc"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/save"
+            />
+
+        <Button
+            android:id="@+id/show1"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="@string/dane"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/clear"
+
+            />
+
+    </RelativeLayout>
+</TableLayout>

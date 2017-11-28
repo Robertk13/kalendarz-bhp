@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">pomocnik pracodawcy</string>
+    <string name="zapisywanie_danych">zapisywanie danych</string>
+    <string name="pokaż_datę_bada">pokaż nazwiska</string>
+    <string name="szkolenia_bhp">szkolenia bhp</string>
+    <string name="title_activity_save_data">saveData</string>
+    <string name="imie">imie</string>
+    <string name="nazwisko">nazwisko</string>
+    <string name="stanowisko">stanowisko</string>
+    <string name="data_szkolenia">data szkolenia</string>
+    <string name="następne_badanie">nast. badanie</string>
+    <string name="umowa_do">umowa do</string>
+    <string name="zapisz">zapisz</string>
+    <string name="wyczysc">wyczyść</string>
+    <string name="data">wybierz datę</string>
+    <string name="pokaż">data nast. szkolenia</string>
+    <string name="dane">dane</string>
+    <string name="nast_pne_szkolenie">nast. szkolenie</string>
+    <string-array name="post1">
+        <item>wybierz stanowisko</item>
+        <item>st. robocze</item>
+        <item>st. szczeg. niebezpieczne</item>
+        <item>pr. adm-biurowy</item>
+        <item>pr. inż-techniczni</item>
+        <item>kierownicy</item>
+    </string-array>
+    <string name="title_activity_full_information">fullInformation</string>
+    <string name="title_activity_information">information</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.irena.robertkaczmarek.pomocnikpracodawcy.chooseActivity">
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/zapisywanie_danych"
+        android:textSize="25sp"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pokaż_datę_bada"
+       android:layout_below="@+id/save"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:padding="5dp"
+        android:background="@android:color/holo_green_light"
+        android:id="@+id/showName"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        />
+
+
+</RelativeLayout>
